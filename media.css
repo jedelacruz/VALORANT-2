@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+nav {
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 10vh;
+	padding: 0 1.5em;
+	background-color: #111111;
+	font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 100%;
+}
+.logo-riot{
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-valo{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-riot img{
+    width: 100px;
+}
+.logo-valo img{
+    margin-top: 10px;
+    width: 35px;
+}
+.nav-menu{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item{
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+nav li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn-play-box{
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.btn-play{
+    padding: 10px 30px;
+    background-color: #FF4655;
+    border-radius: 2px;
+}
+nav .btn-hamburger {
+	display: none;
+	position: absolute;
+	right: 1.5em;
+	top: 50%;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	transform: translateY(-50%);
+}
+nav .btn-hamburger span {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background-color: #fff;
+	margin: 6px;
+	border-radius: 2px;
+	transition: .3s ease-in-out;
+}
+nav .btn-hamburger span:nth-child(4),
+nav .btn-hamburger span:nth-child(5) {
+	position: absolute;
+	top: 10px;
+	opacity: .5;
+}
+nav .btn-hamburger span:nth-child(4) {
+	transform: rotate(45deg) scale(0);
+}
+nav .btn-hamburger span:nth-child(5) {
+	transform: rotate(-45deg) scale(0);
+}
+nav.opened .btn-hamburger span:nth-child(4) {
+	opacity: 1;
+	transform: rotate(45deg) scale(1);
+}
+nav.opened .btn-hamburger span:nth-child(5) {
+	opacity: 1;
+	transform: rotate(-45deg) scale(1);
+}
+nav.opened .btn-hamburger span:nth-child(1),
+nav.opened .btn-hamburger span:nth-child(2),
+nav.opened .btn-hamburger span:nth-child(3) {
+	opacity: 0;
+}
+
+
+  .download{
+    height: 10vh;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .download a{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  .download a:hover{
+    background-color: #393939;
+    border-radius: 10px;
+  }
+  footer{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    color: white;
+  }
+  .footer-icons{
+    padding-top: 3vh;
+  }
+  .footer-icons i{
+    background-color: #393939;
+    padding: 8px;
+    border-radius: 10px;
+    margin:5px;
+  }
+  .logo-icons{
+    margin-top: 5vh;
+  }
+  .logo-icons img{
+    padding: 0px 10px;
+  }
+  .log-1{
+    width: 150px;
+  }
+  .log-2{
+    width: 70px;
+  }
+  footer p{
+    font-size: 13px;
+    color: #7e7e7e;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .soc-links{
+    margin-top: 3vh;
+    color: #f9f9f9;
+    font-size: 13px;
+  }
+  .soc-links a{
+    padding: 0px 30px;
+  }
+
+  .home {
+    background-color: #222;
+    padding-top: 10vh;
+
+  }
+  .ki{
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding-top: 5vh;
+  }
+  .container{
+    padding-top: 5vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .home-box{
+    overflow: hidden;
+  }
+  .home-box img{
+    width: 95%;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+  }
+  .home-box:hover img {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item-hidden{
+        color: transparent;
+    }
+	nav .nav-menu {
+		position: fixed;
+		width: 100%;
+    left: 0;
+		top: 10vh;
+		bottom: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		background-color: #1F1F1F;
+		transition: bottom .5s ease-in-out;
+		overflow: hidden;
+	}
+	nav.opened .nav-menu {
+		bottom: 0;
+	}
+	nav .nav-item > a {
+		display: block;
+	}
+	nav .dropdown-menu {
+		position: relative;
+		top: 0;
+		margin: 0 1.5em;
+	}
+	nav .btn-hamburger {
+		display: block;
+	}
+    .logo-riot{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-valo{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-play-box{
+    display: none;
+    }
+
+}

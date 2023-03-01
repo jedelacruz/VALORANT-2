@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Valorant | Memes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="game.css">
+        <link rel="icon" sizes="400x400" href="https://cdn.emojidex.com/emoji/seal/valorantlogo.png?1589798449">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        
+        <div id="wrap">
+            <nav>
+                <div class="logo-riot">
+                    <img src="https://www.cisco.com/c/en_ae/about/case-studies-customer-success-stories/riot-games/jcr:content/Grid/category_atl/layout-category-atl/blade_1895754487/bladeContents/halves/H-Half-1/emphasis_copy/emphasisContents/image/image.img.png/1638287913421.png">
+                </div>
+                <div class="logo-valo">
+                    <a href=""><img src="https://cdn-ggtech.s3-eu-west-3.amazonaws.com/uploads/games/logos/1674562215061_valorant_logo.png"></a>
+                </div>
+
+                <button type="button" class="btn-hamburger" data-action="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item"><a href="game.html">GAME INFO</a></li>
+                    <li class="nav-item"><a href="media.html">MEMES</a></li>
+                    <li class="nav-item-hidden" style="color: #111111;">assssssssssssssssssss</li>
+                </ul>
+
+                <div class="btn-play-box">
+                    <a class="btn-play" href="">PLAY NOW</a>
+                </div>
+            </nav>
+
+            <section class="home">
+                
+                <p class="ki">MEMES</p>
+                <div class="container" style="padding-bottom: 5vh;">
+                    <div class="home-box">
+                        <img src="https://win.gg/wp-content/uploads/news/01259a0cb2431834302abe2df60a1327/44d740e8bc26f3c722589ee1b948f760/original.jpg">
+                    </div>
+                    <div class="home-box">
+                        <img src="https://i.ytimg.com/vi/WoklHDHWarU/maxresdefault.jpg">
+                    </div>
+                </div>
+
+
+            <section class="download">
+                
+                <a href="#">DOWNLOAD GAME CLIENT</a>
+                <a href="#">DOWNLOAD RIOT MOBILE COMPANION APP</a>
+            </section>
+
+            <footer>
+                
+                <center>
+                <div class="footer-icons">
+                    <a href="https://twitter.com/playvalorant"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/PlayValorant"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/playvalorantofficial/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/PlayVALORANT/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://discord.com/invite/valorant"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </center>
+                <center>
+                <div class="logo-icons">
+                    <img class="log-1" src="https://www.cisco.com/c/en_ae/about/case-studies-customer-success-stories/riot-games/jcr:content/Grid/category_atl/layout-category-atl/blade_1895754487/bladeContents/halves/H-Half-1/emphasis_copy/emphasisContents/image/image.img.png/1638287913421.png">
+                    <a href=""><img class="log-2" src="https://cdn-ggtech.s3-eu-west-3.amazonaws.com/uploads/games/logos/1674562215061_valorant_logo.png"></a>
+        
+                </div>
+            </center>
+            <center>
+                <p>© 2023 RIOT GAMES, INC. RIOT GAMES, VALORANT, AND ANY ASSOCIATED LOGOS ARE TRADEMARKS, SERVICE<br>MARKS, AND/OR REGISTERED TRADEMARKS OF RIOT GAMES, INC.</p>
+            </center>
+            <center>
+                <div class="soc-links">
+                    <a href="#">PRIVACY NOTICE</a>
+                    <a href="#">TERMS OF SERVICE</a>
+                    <a href="#">COOKIES PREFERENCES</a>
+                </div>
+            </center>
+            </footer>
+        </div>
+
+
+</div>
+<script>
+    let nav = document.querySelector('nav');
+    let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+    navToggle.addEventListener('click', () => {
+        if (nav.classList.contains('opened')) {
+            nav.classList.remove('opened');
+        } else {
+            nav.classList.add('opened');
+        }
+    })
+</script>
+</body>
+</html>
